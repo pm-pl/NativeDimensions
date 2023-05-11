@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace jasonwynn10\NativeDimensions\world\generator\nether\decorator;
+namespace jasonw4331\NativeDimensions\world\generator\nether\decorator;
 
-use jasonwynn10\NativeDimensions\world\generator\Decorator;
+use jasonw4331\NativeDimensions\world\generator\Decorator;
 use pocketmine\block\BlockLegacyIds;
 use pocketmine\block\VanillaBlocks;
 use pocketmine\math\Facing;
@@ -17,7 +17,6 @@ class GlowstoneDecorator extends Decorator{
 
 	private const SIDES = [Facing::EAST, Facing::WEST, Facing::DOWN, Facing::UP, Facing::SOUTH, Facing::NORTH];
 
-	/** @var bool */
 	private bool $variable_amount;
 
 	public function __construct(bool $variable_amount = false){

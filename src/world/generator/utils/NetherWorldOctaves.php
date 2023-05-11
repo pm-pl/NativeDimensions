@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace jasonwynn10\NativeDimensions\world\generator\utils;
+namespace jasonw4331\NativeDimensions\world\generator\utils;
 
-use jasonwynn10\NativeDimensions\world\generator\noise\bukkit\OctaveGenerator;
+use jasonw4331\NativeDimensions\world\generator\noise\bukkit\OctaveGenerator;
 
 /**
  * @phpstan-template T of OctaveGenerator
@@ -18,29 +18,13 @@ use jasonwynn10\NativeDimensions\world\generator\noise\bukkit\OctaveGenerator;
  */
 class NetherWorldOctaves extends WorldOctaves{
 
-	/**
-	 * @var OctaveGenerator
-	 *
-	 * @phpstan-var X
-	 */
+	/** @phpstan-var X */
 	public OctaveGenerator $soul_sand;
 
-	/**
-	 * @var OctaveGenerator
-	 *
-	 * @phpstan-var Y
-	 */
+	/** @phpstan-var Y */
 	public OctaveGenerator $gravel;
 
 	/**
-	 * @param OctaveGenerator $height
-	 * @param OctaveGenerator $roughness
-	 * @param OctaveGenerator $roughness_2
-	 * @param OctaveGenerator $detail
-	 * @param OctaveGenerator $surface
-	 * @param OctaveGenerator $soul_sand
-	 * @param OctaveGenerator $gravel
-	 *
 	 * @phpstan-param T $height
 	 * @phpstan-param U $roughness
 	 * @phpstan-param U $roughness_2

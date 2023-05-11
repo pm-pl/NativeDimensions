@@ -1,15 +1,16 @@
 <?php
-declare(strict_types=1);
-namespace jasonwynn10\NativeDimensions\world\generator\biome;
 
-use jasonwynn10\NativeDimensions\world\generator\noise\glowstone\SimplexOctaveGenerator;
+declare(strict_types=1);
+
+namespace jasonw4331\NativeDimensions\world\generator\biome;
+
+use jasonw4331\NativeDimensions\world\generator\noise\glowstone\SimplexOctaveGenerator;
 use pocketmine\utils\Random;
 
 final class BiomeClimateManager{
 
 	private static SimplexOctaveGenerator $noise_gen;
 
-	/** @var BiomeClimate */
 	private static BiomeClimate $default;
 
 	/** @var BiomeClimate[] */
